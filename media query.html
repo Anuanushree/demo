@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+      /* when max width atmost 600px or less */
+      /* @media (max-width:600px) {
+       h1{
+        font-size:20px;
+       }
+         
+     }
+     @media(max-width:40px){
+        h1{
+            display: none;
+        }
+     } */
+      @media (min-width:901px) {
+
+
+         .menu {
+            padding: 10px;
+            border: 2px outset blue;
+            background: linear-gradient(to left, deeppink, rgb(16, 229, 233), green);
+
+            /* width:1000px; */
+         }
+
+         .menu-list1 {
+            display: inline-block;
+            margin-right: 50px;
+            padding: 20px;
+            border: 1px groove darkcyan;
+            font: 25px black;
+            width: 100px;
+            text-align: center;
+         }
+
+         .fa-bar {
+            visibility: hidden;
+         }
+      }
+
+      @media (min-width:601px) and (max-width:900px) {
+
+
+         .menu {
+            padding: 10px;
+            border: 2px outset blue;
+            background: linear-gradient(to left, deeppink, rgb(16, 229, 233), green);
+
+            /* width:1000px; */
+         }
+
+         .menu-list1 {
+            display: inline-block;
+            margin-right: 25px;
+            padding: 10px;
+            border: 1px groove darkcyan;
+            font: 20px black;
+            width: 80px;
+            text-align: center;
+         }
+
+         .fa-bar {
+            visibility: hidden;
+         }
+      }
+
+      @media(max-width:600px) {
+
+         .menu {
+            visibility: hidden;
+         }
+
+         .fa-bar {
+            width: 30px;
+            position: absolute;
+            top: 30px;
+            text-align: right;
+            margin-left: 20px;
+         }
+
+         .container {
+            position: absolute;
+            top: 8px;
+            padding: 8px;
+            height: 80px;
+            width: 600px;
+            border: 2px outset blue;
+            background: linear-gradient(to left, deeppink, rgb(16, 229, 233), green);
+         }
+
+      }
+   </style>
+</head>
+
+<body>s
+
+   <div class="menu">
+      <ul class="menu-list">
+         <li class="menu-list1">Home</li>
+         <li class="menu-list1">about</li>
+         <li class="menu-list1">service</li>
+         <li class="menu-list1">contact</li>
+         <li class="menu-list1">Images</li>
+      </ul>
+   </div>
+   <div class="container">
+      <img src="logo2.png" class="fa-bar">
+   </div>
+</body>
